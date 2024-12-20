@@ -1,0 +1,32 @@
+[
+  {
+    "id": 3,
+    "name": "Chuột không dây Logitech",
+    "price": 500000,
+    "description": "Chuột không dây thiết kế nhỏ gọn, phù hợp cho văn phòng và học tập."
+  },
+  {
+    "id": 4,
+    "name": "Bàn phím cơ Keychron K6",
+    "price": 2500000,
+    "description": "Bàn phím cơ compact, hỗ trợ kết nối Bluetooth và dây cáp."
+  },
+  {
+    "id": 5,
+    "name": "Màn hình Samsung 24 inch",
+    "price": 4500000,
+    "description": "Màn hình độ phân giải Full HD, chất lượng hình ảnh sắc nét."
+  },
+  {
+    "id": 71,
+    "name": "Laptop Dell Inspiron",
+    "price": 15000000,
+    "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng."
+  },
+  {
+    "id": 761,
+    "name": "Laptop Dell Inspiron",
+    "price": 15000000,
+    "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng."
+  }
+]
