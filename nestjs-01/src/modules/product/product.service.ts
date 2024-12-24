@@ -2,17 +2,19 @@ import { Injectable } from '@nestjs/common';
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
 import ProductModel from 'src/data/product.model';
+import { Product } from 'src/schemas/product';
 
 @Injectable()
 export class ProductService {
   constructor(private readonly productModel: ProductModel) {}
 
   async create(createProductDto: CreateProductDto) {
-    const existsProduct = await this.productModel.getById(createProductDto.id);
-    if (existsProduct) {
-      throw new Error(`Sản phẩm với ID ${createProductDto.id} đã tồn tại`);
-    }
-    const createdProduct = await this.productModel.create(createProductDto);
+    const createProduct: Product = {
+      ...createProductDto,
+      id: new Date().getTime(),
+    };
+
+    const createdProduct = await this.productModel.create(createProduct);
     return createdProduct;
   }
 
@@ -21,7 +23,7 @@ export class ProductService {
     return products;
   }
 
-  async findOne(id: number) {
+  public async findOne(id: number) {
     const product = await this.productModel.getById(id);
     return product;
   }

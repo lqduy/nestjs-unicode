@@ -28,5 +28,67 @@
     "name": "Laptop Dell Inspiron",
     "price": 15000000,
     "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng."
+  },
+  {
+    "id": 2,
+    "name": "Laptop Dell Inspiron 222222",
+    "price": 15000000,
+    "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng."
+  },
+  {
+    "id": 547,
+    "name": "Laptop Dell Inspiron 222222",
+    "price": -1.500000346576766e+34,
+    "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng."
+  },
+  {
+    "id": 5547,
+    "name": "Laptop Dell Inspiron 222222",
+    "price": -1.500000346576766e+34,
+    "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng."
+  },
+  {
+    "id": 55847,
+    "name": "Laptop Dell Inspiron 222222",
+    "price": -15890,
+    "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng."
+  },
+  {
+    "id": 558747,
+    "name": "Laptop Dell Inspiron 222222",
+    "price": 15890,
+    "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng."
+  },
+  {
+    "id": 5587447,
+    "name": "Laptop Dell Inspiron 222222",
+    "price": 15890,
+    "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng."
+  },
+  {
+    "name": "Laptop Dell Inspiron 222222",
+    "price": 15890,
+    "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng."
+  },
+  {
+    "name": "Laptop Dell Inspiron 222222",
+    "price": 15890,
+    "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng.",
+    "category": "electronics",
+    "id": 1735060956089
+  },
+  {
+    "name": "Laptop Dell Inspiron 222222",
+    "price": 15890,
+    "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng.",
+    "category": "electronics",
+    "id": 1735060970371
+  },
+  {
+    "name": "Laptop Dell Inspiron 222234534522",
+    "price": 15890,
+    "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng.",
+    "category": "electronics",
+    "id": 1735067673204
   }
 ]

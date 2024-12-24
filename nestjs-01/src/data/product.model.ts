@@ -3,14 +3,13 @@ import { join } from 'path';
 import { Product } from '../schemas/product';
 import { readFile, writeFile } from 'fs/promises';
 import { existsSync } from 'fs';
-import { UpdateProductDto } from '../product/dto/update-product.dto';
+import { UpdateProductDto } from '../modules/product/dto/update-product.dto';
 
 @Injectable()
 class ProductModel {
   private readonly dbPath = join(process.cwd(), '/src/data/products.json');
 
   private async readDataProducts(): Promise<{ products: Product[] }> {
-    console.log(this.dbPath);
     try {
       if (!existsSync(this.dbPath)) {
         console.log(`File does not exist. Creating new file: ${this.dbPath}`);
@@ -58,18 +57,18 @@ class ProductModel {
     product: UpdateProductDto,
   ): Promise<Product | undefined> {
     const { products } = await this.readDataProducts();
-    const index = products.findIndex((p) => p.id === id);
+    const updateProduct = products.find((p) => p.id === id);
 
-    if (index === -1) {
+    if (!updateProduct) {
       throw new Error(`Không tìm thấy sản phẩm với ID ${id}`);
     }
 
-    products[index] = {
-      id: product.id,
-      description: product.description,
-      name: product.name,
-      price: product.price,
-    };
+    Object.keys(product).forEach((key) => {
+      if (updateProduct[key]) {
+        updateProduct[key] = product[key];
+      }
+    });
+
     await this.writeDataProducts(products);
     const updatedProduct = await this.getById(id);
     return updatedProduct;
