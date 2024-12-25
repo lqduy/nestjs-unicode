@@ -9,6 +9,8 @@ import { UpdateProductDto } from '../modules/product/dto/update-product.dto';
 class ProductModel {
   private readonly dbPath = join(process.cwd(), '/src/data/products.json');
 
+  private readonly readonlyField = ['id'];
+
   private async readDataProducts(): Promise<{ products: Product[] }> {
     try {
       if (!existsSync(this.dbPath)) {
@@ -64,7 +66,7 @@ class ProductModel {
     }
 
     Object.keys(product).forEach((key) => {
-      if (updateProduct[key]) {
+      if (updateProduct[key] && !this.readonlyField.includes(key)) {
         updateProduct[key] = product[key];
       }
     });
