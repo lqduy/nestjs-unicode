@@ -14,8 +14,12 @@ export class ProductService {
       id: new Date().getTime(),
     };
 
-    const createdProduct = await this.productModel.create(createProduct);
-    return createdProduct;
+    try {
+      const createdProduct = await this.productModel.create(createProduct);
+      return createdProduct;
+    } catch (error) {
+      throw error;
+    }
   }
 
   async findAll() {

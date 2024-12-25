@@ -97,5 +97,41 @@
     "description": "Laptop Dell hiệu năng ổn định, phù hợp cho công việc văn phòng.",
     "category": "electronics",
     "id": 1735124002848
+  },
+  {
+    "name": "Máy súc",
+    "price": 15890,
+    "category": "electronics",
+    "id": 1735127210066
+  },
+  {
+    "name": "Máy súc",
+    "price": 15890,
+    "category": "electronics",
+    "id": 1735127240750
+  },
+  {
+    "name": "Máy súc",
+    "price": 15890,
+    "category": "electronics",
+    "id": 1735127350281
+  },
+  {
+    "name": "Máy súc",
+    "price": 15890,
+    "category": "electronics",
+    "id": 1735127370522
+  },
+  {
+    "name": "Máy súc",
+    "price": 15890,
+    "category": "furniture",
+    "id": 1735128237835
+  },
+  {
+    "name": "Máy súc",
+    "price": 15890,
+    "category": "furniture",
+    "id": 1735129737630
   }
 ]

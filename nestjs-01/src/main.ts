@@ -1,7 +1,12 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { BadRequestException, ValidationPipe } from '@nestjs/common';
+import {
+  BadRequestException,
+  HttpStatus,
+  ValidationPipe,
+} from '@nestjs/common';
 import { useContainer, ValidationError } from 'class-validator';
+import { ResponseHandler } from 'src/utils/response-handler';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -13,7 +18,13 @@ async function bootstrap() {
         const formattedErrors = errors.map((error) => ({
           [error.property]: Object.values(error.constraints),
         }));
-        return new BadRequestException(formattedErrors);
+        return new BadRequestException(
+          ResponseHandler.error({
+            statusCode: HttpStatus.BAD_REQUEST,
+            message: 'Validation failed',
+            errors: formattedErrors,
+          }),
+        );
       },
     }),
   );
