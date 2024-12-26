@@ -1,0 +1,14 @@
+[
+  {
+    "id": 3,
+    "name": "Chuột không dây Logitech",
+    "price": 500000,
+    "description": "Chuột không dây thiết kế nhỏ gọn, phù hợp cho văn phòng và học tập."
+  },
+  {
+    "id": 4,
+    "name": "Bàn phím cơ Keychron K6",
+    "price": 2500000,
+    "description": "Bàn phím cơ compact, hỗ trợ kết nối Bluetooth và dây cáp."
+  }
+]
